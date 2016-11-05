@@ -1,0 +1,90 @@
+# FOSCAM
+intitle:"Device(" intext:"please choose the third mode"
+filetype:cgi inurl:"/get_status.cgi" intext:"ddns_host"
+intitle:"IPCam Client" intext:"Plugins are not found, Click me to download"
+
+# AXIS
+filetype:shtml inurl:"/view/viewer_index.shtml?id="
+
+# IPCamera
+intext:"Support: Microsoft IE,Apple iPhone,Apple Safari,Google Chrome,Firefox,Opera,SmartPhone..."
+
+# Pelco
+intitle:"Sarix" inurl:"/liveview/viewer"
+
+# Panasonic
+intitle:"WV" "Network Camera" inurl:"/live/oneshot.html"
+intitle:"DG" "Network Camera" inurl:"/live/oneshot.html"
+intitle:"RP" "Network Camera" inurl:"/live/oneshot.html"
+
+# Unknown
+intitle:"Device(" intext:"Server Push Mode (For FireFox, Google Browser)"
+intitle:"EMAX DVR WEB SERVICE" intext:"Support online"
+intitle:"Login" intext:"Any time & Any where" +"IP Surveillance for Your Life"
+intitle:"WebViewerJ" filetype:html inurl:"/win32.html"
+inurl:"/WD180AWP/WD180Awp.exe/CONNECT/"
+intitle:"Yoics 9100a With Universal Remote Access"
+
+# Canon
+filetype:html inurl:"/viewer/live/fr/live.html" intitle:"VB Viewer - "
+intitle:"Caméra réseau VB" intext:"VB Viewer" filetype:html
+
+# Autoroutes
+site:trafic.autoroutes-trafic.fr filetype:aspx inurl:"/webcamApp/webcam.aspx"
+site:module2.autoroutes-trafic.fr filetype:aspx inurl:"/webcamApp/webcam.aspx"
+inurl:"http://trafic.autoroutes-trafic.fr/webcamApp/webcam.aspx?id="
+=begin
+http://trafic.autoroutes-trafic.fr/data/webcams/camAll.xml
+<cam v="ID_WEBCAM"/>
+http://trafic.autoroutes-trafic.fr/webcamApp/webcam.aspx?id=ID_WEBCAM
+=end
+
+# SUPRA (admin:)
+intitle:"supra IPC-1A" intext:"IPC-1A" +"Login."
+intitle:"supra IPC-10AC" intext:"IPC-10AC" +"Login."
+intitle:"supra IPC-100AC" intext:"IPC-100AC" +"Login."
+intitle:"supra IPC-2" intext:"IPC-2" +"Login."
+intitle:"supra IPC-20C" intext:"IPC-20C" +"Login."
+
+# Camera HikVision (admin:12345)
+filetype:asp inurl:"/doc/page/login.asp" intext:"Hikvision Digital Technology Co"
+[Version] /doc/script/global_config.js
+[Login] /doc/page/login.asp
+
+# WEBCAMXP
+intitle:"webcamXP" filetype:html inurl:"/home.html" intext:"Not logged in"
+intitle:"webcamXP" filetype:html inurl:"/multi.html" intext:"Not logged in"
+intitle:"webcamXP" filetype:html inurl:"/mobile.html" intext:"Not logged in"
+intitle:"webcamXP" filetype:html inurl:"/gallery.html" intext:"Not logged in"
+intitle:"webcamXP" filetype:html inurl:"/admin.html" intext:"Not logged in"
+
+# VIVOTEK
+filetype:cgi inurl:"/cgi-bin/viewer/getparam.cgi"
+
+# GeoVision
+intitle:"GeoVision Inc. - IP Camera" filetype:htm
+
+# NUUO
+filetype:php intitle:"NUUO Network Video Recorder Login"
+
+# PosVision
+intitle:"Intelligent Digital Security System"
+
+# Any
+site:.oipcam.com
+
+# IPX
+intitle:"IPX 800 - Cam" filetype:htm inurl:"/cam/"
+
+# Cisco
+intitle:"WVC210 Wireless-G PTZ Internet Camera with Audio" filtype:cgi inurl:"htm"
+
+# Xeno (admin:)
+filetype:html inurl:"/cgi-bin/design/html_template/"+"html"
+
+# Digital Video Server
+intitle:"Digital Video Server" "Please Download and Install OCX First"
+
+# Samsung (admin:4321)
+intitle:"SAMSUNG TECHWIN NVR Web Viewer"
+

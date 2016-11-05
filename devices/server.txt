@@ -1,0 +1,34 @@
+# WAMP
+intitle:"Accueil WAMPSERVER" intext:"Donate" inurl:"/?lang=fr"
+intitle:"WAMPSERVER Homepage" intext:"Donate" inurl:"/?lang=en"
+
+# XAMPP
+intitle:"Index of /C:/xampp" inurl:"/xampp/"
+intitle:"Welcome to XAMPP" inurl:"/dashboard/"
+
+# Windows
+filetype:aspx inurl:"/Remote/?ReturnUrl=/remote/default.aspx"
+filetype:htm inurl:"/ClientHelp/CLT_ras.htm"
+filetype:htm inurl:"/ClientHelp/CLT_mobile.htm"
+filetype:htm inurl:"/ClientHelp/CLT_email.htm"
+filetype:htm inurl:"/ClientHelp/CLT_schedule.htm"
+filetype:htm inurl:"/ClientHelp/CLT_sharedinfo.htm"
+filetype:htm inurl:"/ClientHelp/CLT_shareddocs.htm"
+filetype:htm inurl:"/ClientHelp/CLT_fax.htm"
+filetype:htm inurl:"/ClientHelp/CLT_network.htm"
+
+# Windows 2003
+(intitle:"Small Business Server Network Configuration")+(inurl:"/ConnectComputer/precheck.htm")
+
+# net2ftp
+(intitle:"net2ftp - a web based FTP client")+(intext:"Powered by net2ftp") -www.net2ftp.com
+
+# EasyPHP
+intitle:"[EasyPHP] - Web Local" intext:"Cette page permet de visualiser"
+intitle:"[EasyPHP] - Web Local" intext:"This page display folders in server root"
+
+# CrushFTP (crushadmin:password)
+intitle:"CrushFTP WebInterface" filetype:html -inurl:"www.crushftp.com"
+
+# AppServ Open Project
+intitle:"AppServ Open Project" AND intext:"phpMyAdmin Database Manager"

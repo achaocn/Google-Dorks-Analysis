@@ -1,0 +1,8 @@
+# DreamBox
+intitle:"Dreambox WebControl" AND intext:"EPG-Search"
+
+# Open WEBIF
+intitle:"Open Webif" AND intext:"Open Source Web Interface for Linux set-top box"
+
+# Enigma
+-filetype:php AND -filetype:html AND intitle:"Enigma Web Interface" AND intext:"WEB-X-TV"

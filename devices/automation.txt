@@ -1,0 +1,12 @@
+# Energy Box
+intitle:"energy BOX WEB" 
+
+# Red Lion Controls
+filetype:htm inurl:"/remote/default.htm?0"
+filetype:htm intext:"¨. M." inurl:"/remote/default.htm?0"
+intitle:"G3 Web Server" intext:"1993-2008 Red Lion Controls"
+intitle:"Directory of" intext:"1993-2008 Red Lion Controls"
+intext:"Display a view of the HMI's display and keyboard."
+
+# My Home
+intext:("Accès permis seulement aux utilisateur autorisés" AND ("Bticino" OR "Legrand"))

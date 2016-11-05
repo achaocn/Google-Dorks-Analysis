@@ -1,0 +1,35 @@
+# DrayTek
+intitle:"Vigor Login Page" inurl:"/weblogin.htm"
+
+# NETGEAR Switch
+intitle:"NETGEAR Web Smart Switch" intext:"This page is best viewed at 1024x768"
+
+# Lancom
+intitle:"Login" intext:"LANCOM 1781EF+" +"Password"
+
+# Technicolor
+intitle:"Technicolor - Technicolor Gateway" filetype:lp
+
+# NETIS
+intitle:"Welcome-netis Wireless N Router" intext:"E-mail:support@netis-systems.com"
+
+# 3COM OfficeConnect
+filetype:stm inurl:"/login_top.stm"
+
+# ROUTER TRAFFIC GRAPHER
+intitle:"Traffic Analysis for" filetype:html inurl:"/index.html"
+
+# Belkin Router
+
+intitle:"Setup Home" intext:"You will need to log in before you can change any settings."
+
+# dLan Wifi Router
+inurl:"/cgi-bin/htmlmgr"
+
+# OpenWRT
+intitle:"OpenWrt - LuCI" inurl:"/cgi-bin/luci"
+
+# Mikrotik
+"Traffic and system resource graphing"+"You have access to"
+
+"212.27.10.2-254" # NETGEAR

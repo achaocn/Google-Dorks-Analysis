@@ -1,0 +1,5 @@
+# Icecast Streaming Media Server
+filetype:xsl inurl:"/status.xsl" intext:"Stream Title:"
+
+# ONKYO
+intitle:"Unit information" intext:"ONKYO SOUND"
