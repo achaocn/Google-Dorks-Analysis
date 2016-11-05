@@ -27,17 +27,7 @@ intitle:"Yoics 9100a With Universal Remote Access"
 
 # Canon
 filetype:html inurl:"/viewer/live/fr/live.html" intitle:"VB Viewer - "
-intitle:"Caméra réseau VB" intext:"VB Viewer" filetype:html
-
-# Autoroutes
-site:trafic.autoroutes-trafic.fr filetype:aspx inurl:"/webcamApp/webcam.aspx"
-site:module2.autoroutes-trafic.fr filetype:aspx inurl:"/webcamApp/webcam.aspx"
-inurl:"http://trafic.autoroutes-trafic.fr/webcamApp/webcam.aspx?id="
-=begin
-http://trafic.autoroutes-trafic.fr/data/webcams/camAll.xml
-<cam v="ID_WEBCAM"/>
-http://trafic.autoroutes-trafic.fr/webcamApp/webcam.aspx?id=ID_WEBCAM
-=end
+intitle:"CamÃ©ra rÃ©seau VB" intext:"VB Viewer" filetype:html
 
 # SUPRA (admin:)
 intitle:"supra IPC-1A" intext:"IPC-1A" +"Login."
