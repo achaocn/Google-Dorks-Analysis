@@ -1,1 +1,1 @@
-# Google-Dorks-Analysis
+# Google Hacking Database, GHDB, Google Dorks
