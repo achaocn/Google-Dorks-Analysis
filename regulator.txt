@@ -1,0 +1,11 @@
+# WeatherGoose
+filetype:htm intitle:"Sensors" inurl:"/dyn_sensors.htm"
+
+# Ethernet Thermometer
+intitle:"TME - Ethernet thermometer" inurl:"/index.php?ja="
+
+# Tryba
+filetype:html intitle:"Pompe à chaleur" inurl:"/http/index.html"
+
+# Solar
+filetype:html inurl:"/palm.html" intext:"Espec"."Wh/Wp"."Pmax"

@@ -1,0 +1,66 @@
+# DrayTek
+intitle:"Vigor Login Page" inurl:"/weblogin.htm"
+
+# NETGEAR Switch
+intitle:"NETGEAR Web Smart Switch" intext:"This page is best viewed at 1024x768"
+
+# Lancom
+intitle:"Login" intext:"LANCOM 1781EF+" +"Password"
+
+# Technicolor
+intitle:"Technicolor - Technicolor Gateway" filetype:lp
+
+# NETIS
+intitle:"Welcome-netis Wireless N Router" intext:"E-mail:support@netis-systems.com"
+
+# 3COM OfficeConnect
+filetype:stm inurl:"/login_top.stm"
+
+# ROUTER TRAFFIC GRAPHER
+intitle:"Traffic Analysis for" filetype:html inurl:"/index.html"
+
+# Belkin Router
+intitle:"Setup Home" intext:"You will need to log in before you can change any settings."
+
+# dLan devices - Devolo
+inurl:("cgi-bin" AND "htmlmgr")
+
+# OpenWRT
+intitle:"OpenWrt - LuCI" inurl:"/cgi-bin/luci"
+
+# Mikrotik
+"Traffic and system resource graphing"+"You have access to"
+
+# Juniper Netscreen WebUI (netscreen:netscreen)
+
+# EdgeOS (ubnt:ubnt)
+443/tcp  open  https
+|_banner-plus: <meta name="copyright" content="Copyright 2012 Ubiquiti Networks, Inc. All rights reserved.">
+|_http-title: EdgeOS
+
+== NETGEAR DG834 (admin:password) ==
+#=================================================
+|_http-auth: 
+| HTTP/1.1 401 Unauthorized\x0D
+|_  Basic realm=NETGEAR DG834 
+| http-headers: 
+|   WWW-Authenticate: Basic realm="NETGEAR DG834 "
+|_http-methods: No Allow or Public header in OPTIONS response (status code 501)
+|_http-title:  Avertissement relatif \xE0 l'autorisation
+#=================================================
+[DHCP PPPoA] /setup.cgi?next_file=start.htm
+TCP/32764 >> use exploit/linux/misc/sercomm_exec
+#=================================================
+
+== NETGEAR ProSafe FVS336Gv3, Gigabit Dual WAN SSL VPN Firewall (admin:password) ==
+#=================================================
+| http-headers: 
+|   Server: Embedded HTTP Server.
+|   Content-Length: 107
+#=================================================
+[Version Disclosure]
+[GET] /scgi-bin/helpIndex.htm
+#=================================================
+[SQL Injection]
+[GET] /scgi-bin/platform.cgi?page=portalLogin.htm&portal=SSL-VPN
+#=================================================
