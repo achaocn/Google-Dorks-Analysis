@@ -1,0 +1,13 @@
+# Somfy
+filetype:htm intitle:"Centrale" inurl:"/fr/login.htm"
+
+# Sauter moduWeb (admin:passwd)
+intitle:"Sauter moduWeb - Login"
+intitle:"Sauter moduWeb - Login" inurl:"/?locale="
+intitle:("SAUTER moduWeb Vision") AND ("Keep me logged in")
+
+# Sunny WebBox
+intitle:"Sunny WebBox" filetype:htm inurl:"/home_frameset.htm"
+
+# Unitronics
+filetype:html intitle:"Unitronics PLC" intext:"BinLib Version"

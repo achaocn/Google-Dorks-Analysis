@@ -1,0 +1,25 @@
+# Untangle
+intitle:"Untangle Administrator Login" intext:"Untangle Administrator Login."
+
+# UniFi
+intitle:"Login - UniFi Controller"
+
+# LifeSize
+(intitle:"LifeSize")+(intext:"Allow Pop-Ups for" +"to automatically launch")
+
+# Schneider
+intitle:"Telecontrol" intext:"Xflow" +"for iRio board"
+intext:"Xflow" +"for iRio board"
+intitle:"Schneider Electric Telecontrol - Industrial Web Control"
+
+# Multi System Web Access
+intitle:"Web Access" intext:"Connecting People and Systems Through Internet"
+
+# WorldClient
+intitle:"WorldClient" filetype:dll inurl:"WorldClient.dll"
+
+# Graphite
+intitle:"Graphite Browser" intext:"User Interface"
+
+# ZPanel (zadmin:zadmin)
+intitle:"Control Panel - Login" "Enable Session Security"

@@ -1,0 +1,16 @@
+# Icecast Streaming Media Server
+filetype:xsl inurl:"/status.xsl" intext:"Stream Title:"
+
+# ONKYO
+intitle:"Unit information" intext:"ONKYO SOUND"
+
+# Logitech - Media Server (7.9.1)
+Server: Logitech Media Server (7.9.1)
+[File System]
+/clixmlbrowser/clicmd=browselibrary+items&linktitle=PLUGIN_EXTENDED_BROWSEMODES_BROWSEFS&mode=filesystem/?player=
+
+# Max2Play - Media Solution 
+Set-Cookie: Max2Play-Interface-Requests=
+<title>Max2Play | Media Solution - WIDIOSERVER\n</title>
+[Mount Network Paths]
+/plugins/max2play_settings/controller/Filesystem.php

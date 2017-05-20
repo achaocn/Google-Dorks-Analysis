@@ -1,0 +1,11 @@
+# FCKeditor
+intitle:("FCKeditor - Resources Browser") AND filetype:html AND inurl:("/tinymce/filemanager/browser.html")
+
+# QLik
+intitle:("QlikView - AccessPoint") AND filetype:htm AND inurl:("/qlikview/index.htm")
+
+# SOFTWARE SABnzbd
+intitle:("SABnzbd") AND inurl:("/config/rss/")
+
+# Rumpus
+intitle:("Web File Manager") AND inurl:("/Login") AND ("Secure Login")
