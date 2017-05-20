@@ -1,2 +1,0 @@
-# Fortinet SSL VPN (test:test)
-filetype:html inurl:"/sslvpn/portal.html"
