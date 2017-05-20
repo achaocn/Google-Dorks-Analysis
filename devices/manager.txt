@@ -1,8 +1,0 @@
-# FCKeditor
-intitle:"FCKeditor - Resources Browser" filetype:html inurl:"/tinymce/filemanager/browser.html"
-
-# QLik
-intitle:"QlikView - AccessPoint" filetype:htm inurl:"/qlikview/index.htm"
-
-# SOFTWARE SABnzbd
-intitle:"SABnzbd" inurl:"/config/rss/"
