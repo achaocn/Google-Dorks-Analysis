@@ -1,2 +1,0 @@
-# Cisco
-intitle:"Cisco Systems, Inc." intext:"Device Information"+"Cisco Unified IP Phone"
