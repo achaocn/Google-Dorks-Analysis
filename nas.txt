@@ -1,10 +1,6 @@
 # BUFFALO NAS
 intitle:"LinkStation" inurl:"/static/index.html" intext:"BUFFALO INC"
 
-# QNAP /cgi-bin/authLogin.cgi (XML Informations)
-filetype:html intitle:"Welcome to QNAP Turbo NAS" inurl:"/cgi-bin/html/login.html"
-filetype:cgi intitle:"Welcome to QNAP Turbo NAS" inurl:"/cgi-bin/index.cgi"
-
 # OpenMediaVault NAS
 intitle:"OpenMediaVault web administration interface" intext:"Login" +"Password"
 
@@ -33,4 +29,12 @@ intitle:"LaCie"+"Login" intext:"Effacer le cache de votre navigateur"
 /api/v2/system/info
 /api/v2/system/general
 /api/v2/system/smtp
+#=================================================
+
+== QNAP TS ==
+#=================================================
+filetype:html intitle:"Welcome to QNAP Turbo NAS" inurl:"/cgi-bin/html/login.html"
+filetype:cgi intitle:"Welcome to QNAP Turbo NAS" inurl:"/cgi-bin/index.cgi"
+#=================================================
+ modelName > /cgi-bin/authLogin.cgi
 #=================================================

@@ -64,3 +64,11 @@ TCP/32764 >> use exploit/linux/misc/sercomm_exec
 [SQL Injection]
 [GET] /scgi-bin/platform.cgi?page=portalLogin.htm&portal=SSL-VPN
 #=================================================
+
+== Buffalo AirStation Pro WAPS-AG300H (user:password) ==
+#=================================================
+/cgi-bin/sysinfo.cgi
+/cgi-bin/tools.cgi?info=0&ping4addr=127.0.0.1
+/cgi-bin/tools.cgi?info=3&traceroute_addr=127.0.0.1&butn_idx=1
+/cgi-bin/TRtemp
+#=================================================
