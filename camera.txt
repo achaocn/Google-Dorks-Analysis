@@ -65,6 +65,20 @@ intitle:"Digital Video Server" "Please Download and Install OCX First"
 intitle:"SAMSUNG TECHWIN NVR Web Viewer"
 intitle:"Web Viewer for Samsung DVR"
 
+== Dahua ==
+#=================================================
+| http-headers: 
+|   CONNECTION: close
+|   CONTENT-LENGTH: 50299
+|   CONTENT-TYPE: text/html
+#=================================================
+[Fingerprinting]
+/js/loginEx.js >> Dahua3.0-Web3.0
+#=================================================
+[Sensitives Informations Disclosure]
+/current_config/passwd
+#=================================================
+
 == IPCamera ==
 #=================================================
 filetype:html AND intitle:("IPCamera") AND inurl:("web" AND "html")
@@ -96,7 +110,7 @@ intitle:"supra IPC-20C" intext:"IPC-20C" +"Login."
 /branding/branding.js
 #=================================================
 
-== FOSCAM (admin:) ==
+== FOSCAM (admin:) && AtHome ==
 #=================================================
 intitle:("Device(") AND intext:("propose using" AND "screen resolution")
 #=================================================
