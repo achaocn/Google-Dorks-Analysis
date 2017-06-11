@@ -4,10 +4,6 @@ intitle:"LinkStation" inurl:"/static/index.html" intext:"BUFFALO INC"
 # OpenMediaVault NAS
 intitle:"OpenMediaVault web administration interface" intext:"Login" +"Password"
 
-# Synology
-filetype:cgi AND inurl:((":5000/" OR ":5001/") AND "/webman/index.cgi")
---Configuration file disclosure-- /webman/synodefs.cgi
-
 # WD Cloud
 filetype:cgi inurl:"/cgi-bin/login_mgr.cgi"
 
@@ -21,6 +17,13 @@ inurl:"/info/Japanese/NASNavi2/"
 inurl:"/info/Japanese/lmclchg/"
 inurl:"/info/Japanese/manual/"
 filetype:html inurl:"/info/Japanese/manual/"
+
+== Synology ==
+#=================================================
+filetype:cgi AND inurl:((":5000/" OR ":5001/") AND "/webman/index.cgi")
+#=================================================
+[Configuration file disclosure] >> /webman/synodefs.cgi
+#=================================================
 
 == LaCie ==
 #=================================================

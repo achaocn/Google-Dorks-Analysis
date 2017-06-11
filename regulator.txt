@@ -9,3 +9,10 @@ filetype:html intitle:"Pompe à chaleur" inurl:"/http/index.html"
 
 # Solar
 filetype:html inurl:"/palm.html" intext:"Espec"."Wh/Wp"."Pmax"
+
+== Sunny WebBox (:sma) ==
+#=================================================
+intitle:"Sunny WebBox" filetype:htm inurl:"/home_frameset.htm"
+#=================================================
+[Operator-Name] /wb_settings_fs.htm
+#=================================================
