@@ -65,6 +65,12 @@ intitle:"Digital Video Server" "Please Download and Install OCX First"
 intitle:"SAMSUNG TECHWIN NVR Web Viewer"
 intitle:"Web Viewer for Samsung DVR"
 
+== TRENDnet TV-IP (admin:admin) ==
+#=================================================
+Server: App-webs
+WWW-Authenticate: Basic realm="TV-IPXXXX"
+#=================================================
+
 == Dahua ==
 #=================================================
 | http-headers: 
