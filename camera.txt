@@ -21,11 +21,6 @@ intitle:"Yoics 9100a With Universal Remote Access"
 filetype:html inurl:"/viewer/live/fr/live.html" intitle:"VB Viewer - "
 intitle:"Caméra réseau VB" intext:"VB Viewer" filetype:html
 
-# Camera HikVision (admin:12345) (or PINCODE 5 numbers)
-filetype:asp inurl:"/doc/page/login.asp" intext:"Hikvision Digital Technology Co"
-[Version] /doc/xml/version.xml
-[Login] /ISAPI/Security/userCheck
-
 # WEBCAMXP
 intitle:"webcamXP" filetype:html inurl:"/home.html" intext:"Not logged in"
 intitle:"webcamXP" filetype:html inurl:"/multi.html" intext:"Not logged in"
@@ -35,10 +30,6 @@ intitle:"webcamXP" filetype:html inurl:"/admin.html" intext:"Not logged in"
 
 # VIVOTEK
 filetype:cgi inurl:"/cgi-bin/viewer/getparam.cgi"
-
-# GeoVision (admin:admin)
-intitle:"GeoVision Inc. - IP Camera" filetype:htm
-intitle:"GeoVision Inc. - Video Server" filetype:htm
 
 # NUUO
 filetype:php intitle:"NUUO Network Video Recorder Login"
@@ -55,15 +46,30 @@ intitle:"IPX 800 - Cam" filetype:htm inurl:"/cam/"
 # Cisco
 intitle:"WVC210 Wireless-G PTZ Internet Camera with Audio" filtype:cgi inurl:"htm"
 
-# Xeno (admin:)
-filetype:html inurl:"/cgi-bin/design/html_template/"+"html"
-
 # Digital Video Server
 intitle:"Digital Video Server" "Please Download and Install OCX First"
 
-# Samsung (admin:4321)
+ == SHODAN ==
+ #=================================================
+"Server: Motion/4.0.1+git37b3595" AND "Content-Type: multipart/x-mixed-replace; boundary=BoundaryString"
+#=================================================
+
+== Xeno (admin:) ==
+#=================================================
+filetype:html inurl:"/cgi-bin/design/html_template/"+"html"
+#=================================================
+
+== Samsung (admin:4321) ==
+#=================================================
 intitle:"SAMSUNG TECHWIN NVR Web Viewer"
 intitle:"Web Viewer for Samsung DVR"
+#=================================================
+
+== GeoVision (admin:admin) ==
+#=================================================
+intitle:"GeoVision Inc. - IP Camera" filetype:htm
+intitle:"GeoVision Inc. - Video Server" filetype:htm
+#=================================================
 
 == TRENDnet TV-IP (admin:admin) ==
 #=================================================
@@ -71,15 +77,32 @@ Server: App-webs
 WWW-Authenticate: Basic realm="TV-IPXXXX"
 #=================================================
 
+== H.264 Remote MGMT System ==
+#=================================================
+Server: thttpd
+#=================================================
+/cgi-bin/jvsweb.cgi?cmd=yst&action=get_video
+/cgi-bin/jvsweb.cgi?cmd=account
+#=================================================
+
+== Camera HikVision (admin:12345) ==
+#=================================================
+filetype:asp inurl:"/doc/page/login.asp" intext:"Hikvision Digital Technology Co"
+#=================================================
+[Version] /doc/xml/version.xml
+[Login] /ISAPI/Security/userCheck
+#=================================================
+
 == Dahua ==
 #=================================================
 | http-headers: 
 |   CONNECTION: close
-|   CONTENT-LENGTH: 50299
-|   CONTENT-TYPE: text/html
+|   P3P: CP=CAO PSA OUR
+<title>WEB SERVICE</title>
 #=================================================
 [Fingerprinting]
-/js/loginEx.js >> Dahua3.0-Web3.0
+/cap.js >> TCP Port
+/js/loginEx.js >> Dahua3.0-Web3.0 OR DhWebClientSessionID
 #=================================================
 [Sensitives Informations Disclosure]
 /current_config/passwd
@@ -126,3 +149,13 @@ intitle:("Device(") AND intext:("propose using" AND "screen resolution")
 [Sensitives Informations Disclosure]
 /get_status.cgi
 #=================================================
+
+== Xmsecu NetSurveillance (admin:) ==
+#=================================================
+intitle:("NETSurveillance Web")
+#=================================================
+| http-headers: 
+|   Server: uc-httpd
+<title>NETSurveillance WEB</title>
+#=================================================
+

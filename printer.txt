@@ -28,4 +28,6 @@ filetype:html inurl:"/cgi-bin/dynamic/printer/config/scanprofile/createprofile.h
 filetype:html inurl:"/cgi-bin/dynamic/printer/config/gen/copy_printer_settings.html"
 
 == Toshiba (admin:123456) ==
+#=================================================
 -filetype:pdf AND intitle:"TopAccess" AND intext:("Device Information" AND "Status" AND "Name" AND "Location" AND "Copier Model" AND "Serial Number" AND "MAC Address")
+#=================================================

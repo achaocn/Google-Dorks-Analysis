@@ -9,3 +9,6 @@ intitle:("SABnzbd") AND inurl:("/config/rss/")
 
 # Rumpus
 intitle:("Web File Manager") AND inurl:("/Login") AND ("Secure Login")
+
+# XavierBerger - RPi-Monitor
+filetype:html AND intitle:("RPi-Monitor") AND "Welcome to RPi-Monitor web interface"

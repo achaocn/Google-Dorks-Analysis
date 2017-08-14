@@ -10,3 +10,23 @@ intext:"Display a view of the HMI's display and keyboard."
 
 # My Home
 intext:("Accès permis seulement aux utilisateur autorisés" AND ("Bticino" OR "Legrand"))
+
+== PowerLink Visonic (Admin:Admin123) ==
+#=================================================
+intitle:("Visonic" AND "PowerLink" AND "Login") AND inurl:("web" OR "mobile")
+#=================================================
+Set-Cookie: PowerLink=
+#=================================================
+
+== ATRIUM - Door Controller (admin:admin | master:master) ==
+#=================================================
+Access-Control-Allow-Origin: *
+Access-Control-Allow-Methods: GET, POST, PUT, DELETE, OPTIONS
+#=================================================
+[Informations Disclosure]
+/login.xml
+/diagnostics.xml
+#=================================================
+[Update Firmware]
+/update.html
+#=================================================

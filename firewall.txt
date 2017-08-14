@@ -16,3 +16,10 @@ intitle:"User Authentication" filetype:cgi inurl:"/wgcgi.cgi"
 
 # Windows
 intitle:"WD Sentinel DX4000"
+
+== pfSense (admin:pfsense) ==
+#=================================================
+443/tcp
+Server: lighttpd
+Expires: Thu, 19 Nov 1981 08:52:00
+#=================================================
