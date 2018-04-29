@@ -1,0 +1,65 @@
+# XOOPS
+intitle:"XOOPS Installation Wizard"
+
+# vBulletin
+-site:www.vbulletin.org filetype:php intitle:"vBulletin" +"Install System" intext:"install/upgrade"
+
+# Typo3
+filetype:php inurl:"/sysext/install/Start/Install.php"
+
+# SMF
+intitle:"SMF Installer" filetype:php inurl:"/install.php"
+
+# Serendipity
+intitle:"Administration de Serendipity" filetype:php inurl:"/serendipity/serendipity_admin.php"
+
+# PunBB
+intitle:"PunBB Installation" filetype:php inurl:"/install.php"
+
+# PHPBB
+intitle:"Introduction" intext:"phpBB3" filetype:php inurl:"install/index.php"
+intitle:"General Public License" filetype:php inurl:"mode=overview"
+intitle:"Support" filetype:php inurl:"mode=overview"
+
+# MiniBB
+intitle:"miniBB installation" filetype:php inurl:"/_install.php"
+
+# FlatPress
+filetype:php intitle:"FlatPress installer"
+
+# Joomla
+intitle:"Joomla!&#32;-&#32;Web&#32;Installer"&#32;inurl:"/administrator/"
+intitle:"Joomla!&#32;-&#32;Web&#32;Installer"&#32;inurl:"/installation/"
+intitle:"Installation&#32;de&#32;Joomla!&#32;via&#32;le&#32;Web"&#32;inurl:"/installation/"
+intext:"Please select the language to use during the Joomla! installation steps:" inurl:"/index.php" filetype:php
+intitle:"Installation de Joomla! via le Web" inurl:"/index.php" filetype:php
+intitle:"ANGIE - Akeeba Next Generation Installation Engine" AND inurl:"installation/index.php"
+
+# MyBB
+filetype:php intitle:"MyBB Installation" inurl:"/install/index.php"
+intext:" Send anonymous statistics about your server specifications to the MyBB Group"
+
+# Drupal
+intitle:"Select an installation profile | Drupal" inurl:"/drupal/"
+filetype:php intitle:"Select an installation profile | Drupal" inurl:"install.php"
+
+# WikiNi
+intitle:"Installation de WikiNi"
+
+# DokuWiki
+filetype:php intitle:"DokuWiki Installer" inurl:"/install.php"
+
+# Zen-Cart
+inurl:"zc_install/" intext:"Welcome to the setup program for Zen Cart"
+
+# FluxBB
+filetype:php&#32;intitle:"FluxBB&#32;Installation"&#32;inurl:"install.php"
+
+# ZenPhoto
+filetype:php inurl:"/zp-core/setup/index.php"
+
+# osCommerce
+(intitle:"osCommerce, Open Source E-Commerce Solutions" -filetype:* inurl:"/install/")
+
+# Mantis
+intitle:("Administration" AND "Installation") AND inurl:("admin/install.php") AND intext:("Checking Installation")
